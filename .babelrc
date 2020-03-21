@@ -1,0 +1,16 @@
+// ? Maybe check this out to finish server side rendering ?
+// * https://dev.to/aprietof/nextjs--styled-components-the-really-simple-guide----101c
+
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
+  ]
+}

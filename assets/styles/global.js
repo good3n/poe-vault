@@ -18,11 +18,19 @@ const GlobalStyle = createGlobalStyle`
     --color_gray-light2: #f6f9fc;
     --color_green-light: #e6f4f1;
     --color_border: #dce4ec;
-
-    --color_purple-light: #847796;
-    --color_purple-dark: #524763;
-    --color_pink: #FAEAFF;
-    --color_green: #00C9A5;
+    
+    --color__dark: #282a36;
+    --color__dark100: #363848;
+    --color__dark200: #44475a;
+    --color__foreground: #f8f8f2;
+    --color__comment: #6272a4
+    --color__cyan: #8be9fd;
+    --color__green: #50fa7b;
+    --color__orange: #ffb86c;
+    --color__pink: #ff79c6;
+    --color__purple: #bd93f9;
+    --color__red: #ff5555;
+    --color__yellow: #f1fa8c;
 
     /* https://mycolor.space/?hex=%23524763&sub=1 */
   }
@@ -39,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     font-family: var(--font_body);
     color: var(--color_body);
-    background-color: var(--color_purple-light);
+    background-color: var(--color__dark);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
