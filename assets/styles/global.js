@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 
@@ -31,8 +31,6 @@ const GlobalStyle = createGlobalStyle`
     --color__purple: #bd93f9;
     --color__red: #ff5555;
     --color__yellow: #f1fa8c;
-
-    /* https://mycolor.space/?hex=%23524763&sub=1 */
   }
 
   * {
@@ -71,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5 {
     font-family: var(--font_heading);
-    color: var(--color_heading);
+    color: #fff;
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: -0.025em;
@@ -94,8 +92,73 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h5 {
-    font-size: 1.25rem;
+    font-size: 0.875rem;
   }
-`;
 
-export default GlobalStyle;
+  .select-wrap {
+    position: relative;
+    background: var(--color__dark200);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 5px;
+
+    select {
+      position: relative;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: none;
+      border-radius: 0;
+      border: none;
+      display: block;
+      width: 100%;
+      padding: 10px 40px 10px 20px;
+      color: #fff;
+      font-size: 16px;
+      z-index: 1;
+    }
+    
+    svg {
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      width: 13px;
+
+      path {
+        fill: var(--color__green);
+      }
+    }
+  }
+
+  form {
+    margin: 0;
+
+    label {
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  input[type="text"],
+  input[type="number"],
+    input[type="search"] {
+    background: var(--color__dark200);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: #fff;
+      opacity: 0.5;
+    }
+  }
+`
+
+export default GlobalStyle

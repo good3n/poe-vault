@@ -1,4 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+
+export const Items = styled.div`
+  padding-left: 320px;
+  padding-right: 320px;
+`
 
 export const StyledItem = styled.div`
   background: var(--color__dark200);
@@ -30,7 +35,7 @@ export const StyledItem = styled.div`
       max-width: 100%;
     }
   }
-`;
+`
 
 export const Header = styled.header`
   background: var(--color__dark100);
@@ -57,7 +62,7 @@ export const Header = styled.header`
   .req-value {
     font-weight: 600;
   }
-`;
+`
 
 export const Inner = styled.div`
   display: grid;
@@ -85,10 +90,10 @@ export const Inner = styled.div`
       }
     }
   }
-`;
+`
 
 export const Footer = styled.footer`
   background: var(--color__dark100);
   padding: 12px 20px;
   display: flex;
-`;
+`
