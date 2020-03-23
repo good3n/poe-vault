@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Requirements } from '../Filters/Requirements'
 import { StyledSidebar, SearchButton } from './Sidebar.styles'
 
 const Sidebar = props => {
@@ -38,28 +39,8 @@ const Sidebar = props => {
           </svg>
         </div>
         <h5>Sockets</h5>
-        <h5>Requirements</h5>
-        <form action="">
-          <label htmlFor="">Level</label>
-          <span
-            css={`
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              gap: 10px;
-            `}
-          >
-            <input
-              type="number"
-              placeholder="min"
-              onChange={e => setRequiredMinValue(e.target.value)}
-            />
-            <input
-              type="number"
-              placeholder="max"
-              onChange={e => setRequiredMaxValue(e.target.value)}
-            />
-          </span>
-        </form>
+
+        <Requirements />
         <h5>Damage</h5>
         <h5>Defense</h5>
         <h5>Modifiers</h5>

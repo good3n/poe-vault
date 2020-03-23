@@ -35,6 +35,19 @@ export const StyledItem = styled.div`
       max-width: 100%;
     }
   }
+
+  span.nomods {
+    display: none;
+    color: #5f6481;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    + span.nomods {
+      display: block;
+    }
+  }
 `
 
 export const Header = styled.header`
@@ -43,10 +56,26 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
 
-  h3 {
+  h2 {
     margin: 0;
     color: #fff;
     font-size: 21px;
+
+    &.type-1 {
+      color: #576ef2;
+    }
+
+    &.type-2 {
+      color: #f9e281;
+    }
+
+    &.type-3 {
+      color: #d7762d;
+    }
+
+    &.type-4 {
+      color: #22c1b9;
+    }
   }
 
   .requirements {
